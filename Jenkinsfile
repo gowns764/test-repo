@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh "kubectl get pod"
+                sh "/usr/local/bin/kubectl get pod"
             }
         }
     }
