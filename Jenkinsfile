@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh "/usr/local/bin/kubectl get pod"
+                sh "helm version"
             }
         }
     }
