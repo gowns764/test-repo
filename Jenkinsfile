@@ -8,5 +8,10 @@ pipeline {
                 git url: 'https://github.com/gowns764/test-repo.git', branch: 'main'
             }
         }
+        stage('Test') {
+            steps {
+                sh "kubectl get pod"
+            }
+        }
     }
 }
