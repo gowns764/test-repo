@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Git Clone') {
+        stage('Git Update') {
             steps {
-                echo 'Git Clone'
-                sh "git clone https://github.com/gowns764/test-repo.git"
+                echo 'Git Update'
+                git url: 'https://github.com/gowns764/test-repo.git'
             }
         }
     }
